@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebChat</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" charset="utf-8"></script>
+</head>
+<body>
+  <div id="container" class="container">
+    <div class="header">
+      <a href="index.html">
+        <img src="assets/images/logo.png" style="width:100%">
+      </a>
+    </div>
+    <div>
+      <input class="input-text" type="text" name="nickname" id="nickname" onkeypress="event.keyCode == 13 ? login('nickname'): null" placeholder="Qual seu nome?" required>
+      <button type="submit" name="btnEnter" onclick="login('nickname')">ENVIAR</button>
+      <button type="button" name="btnReset" onclick="reset_users()">DESCONECTAR USUÁRIOS</button>
+      <button type="button" name="btnReset" onclick="reset_messages()">LIMPAR MENSAGENS</button>
+    </div>
+  </div>
+</body>
+</html>

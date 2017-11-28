@@ -1,0 +1,124 @@
+body {
+  margin: 0px;
+  margin-bottom: 65px;
+  font-family: Arial, Tahoma;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 15px;
+    width: 360px;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    width: auto;
+  }
+}
+
+.header {
+  text-align: center;
+}
+
+label[for="nickname"] {
+  display: none;
+  font-family: Arial, Tahoma;
+  font-weight: bold;
+}
+
+button[name="btnEnter"],
+button[name="btnReset"],
+input[name="nickname"],
+input[name="textmsg"] {
+  border: 1px solid #21ade7;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 15px;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+  overflow: visible;
+}
+button[name="btnEnter"] {
+  background: #21ade7;
+  color: white;
+  font: bold 10pt Arial,Tahoma;
+  cursor: pointer;
+}
+button[name="btnEnter"]:hover {
+  background: #2f9ac6;
+}
+button[name="btnEnter"]:active {
+  background: #21ade7;
+}
+
+hr {
+  background: #2f9ac6;
+  border: 0px;
+  height: 1px;
+  width: 80%;
+  margin-bottom: 15px;
+}
+
+/* chat */
+.content.left {
+  margin-right: 30px;
+}
+.content.right {
+  margin-left: 30px;
+  background: #add5e6;
+}
+.content {
+  background: #daecf3;
+  border-radius: 5px;
+  font: 10pt Arial,Tahoma;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.content > .user,
+.content > .message {
+  display: block;
+}
+.content > .date {
+  font-weight: normal;
+}
+.content > .date,
+.content > .user {
+  font-size: 8pt;
+}
+.content > .user {
+  font-weight: bold;
+}
+.content > .message {
+  font-style: italic;
+}
+.content.right > .message {
+  text-align: right;
+}
+
+button[name="btnEnter"].btnOk {
+  width: 50px;
+  margin-left: 5px;
+}
+.chat-footer {
+  display: flex;
+  width: 360px;
+}
+@media screen and (max-width: 480px) {
+  .chat-footer {
+    width: auto;
+  }
+}
+.footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:65px;
+   width:100%;
+   background:#F0F0F0;
+}
+
+.messages {
+  overflow: auto;
+  height: 55%;
+}

@@ -1,0 +1,28 @@
+  <div class="header">
+    <a href="index.html">
+      <img src="assets/images/logo.png" style="width:35%">
+    </a>
+    <div id="chat_user" style="text-align:center"></div>
+    <hr>
+  </div>
+  <div id="online_users" style="font-size:8pt;max-width:100%;word-wrap: break-word"></div>
+
+  <div class="messages">
+    <div id="messages">
+      <div class="content left">
+        <span class="user"><span class="date">[27/10/17 21:08]</span> Angelito diz:</span>
+        <span class="message">Oi</span>
+      </div>
+      <div class="content right">
+        <span class="user"><span class="date">[27/10/17 21:08]</span> Você diz:</span>
+        <span class="message">Oi</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container chat-footer">
+      <input class="input-text" type="text" name="textmsg" id="textmsg" onkeypress="event.keyCode == 13 ? send_message('textmsg'): null" placeholder="Escreva sua mensagem...">
+      <button class="btnOk" type="submit" name="btnEnter" onclick="send_message('textmsg')">ok</button>
+    </div>
+  </div>
