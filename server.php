@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 
 echo start();
 
@@ -99,7 +100,7 @@ class Chat
   }
   public function message_add($nick, $textmsg) {
     $message = new Message();
-    $message->datetime = date('d/m/Y H:m');
+    $message->datetime = date('d/m/Y H:i');
     $message->user = $nick;
     $message->textmsg = $textmsg;
     $this->Messages[] = $message;
@@ -117,7 +118,7 @@ class Chat
     }
     if (empty($content)) {
       $message = new Message();
-      $message->datetime = date('d/m/Y H:m');
+      $message->datetime = date('d/m/Y H:i');
       $message->user = 'chatbot';
       $message->textmsg = "Olá! Bem vindo ao CHAT!";
       $this->Messages[] = $message;
